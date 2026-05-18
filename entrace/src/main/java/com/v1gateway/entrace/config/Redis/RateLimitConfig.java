@@ -9,6 +9,6 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 public class RateLimitConfig {
     @Bean
     public RateLimitFilter rateLimitFilter(StringRedisTemplate redisTemplate){
-        return new RateLimitFilter(redisTemplate);
+        return new RateLimitFilter();
     }
 }
